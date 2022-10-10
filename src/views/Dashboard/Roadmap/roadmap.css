@@ -1,0 +1,210 @@
+.step_link,.step_link:hover{
+    font-weight: 700;
+    color: #0076cc;
+    text-decoration: underline;
+}
+.main{
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head_1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+.head_1 span{
+    color: #ff4732;
+}
+.head_2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 3px;
+}
+#roadmap ul{
+    padding: 0;
+    display: flex;
+}
+#roadmap ul li{
+    width: 240px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li .icon{
+    font-family: "avenir";
+
+    font-size: 20px;
+    color: #fff;
+    margin: 0 60px;
+}
+ul li .text {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "avenir";
+    max-width: 210px;
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Progress Div Css  */
+
+ul li .progress {
+    height: 21px;
+    width: 18px;
+    background-image: url(../../../assets/images/roadmap_border.svg);
+    margin: 30px 0 0;
+    background-color: unset;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress::after {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 0.5px;
+    background-color: #fff;
+    right: -40px;
+}
+/* .one::after{
+    width: 0;
+    height: 0;
+} */
+ul li .progress .uil{
+    display: none;
+}
+ul li .progress p{
+    font-size: 0px;
+}
+
+/* Active Css  */
+
+ul li .active{
+    background-color: #ff4732;
+    display: grid;
+    place-items: center;
+}
+li .active::after{
+    background-color: #ff4732;
+}
+ul li .active p{
+    display: none;
+}
+ul li .active .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+/* Responsive Css  */
+@media (min-width: 1240px){
+    .progress::after{
+        width: 240px;
+        right: 10px;
+    }
+}
+@media (min-width: 1060px){
+    .progress::after {
+        width: 240px;
+        right: 0px;
+    }
+}
+@media (min-width: 980px) and (max-width: 1060px){
+    .progress::after {
+        content: " ";
+        position: absolute;
+        width: 240px;
+        height: 0.5px;
+        background-color: #fff;
+        right: 0px;
+    }
+}
+@media (min-width: 769px) and (max-width: 979px){
+    #roadmap ul li {
+        width: 220px;
+     
+    }
+    .progress::after {
+        content: " ";
+        position: absolute;
+        width: 220px;
+        height: 0.5px;
+        background-color: #fff;
+        right: 0px;
+    }
+}
+@media (max-width: 903px) {
+    ul li .text {
+        padding-left: 12px;
+        margin-top: 16px;
+        text-align: left;
+    }
+    .progress::after {
+        width: 0.5px;
+        height: 140px;
+        bottom: 9px;
+        left: 103px;
+        transform: translateX(-50%);
+    }
+    #roadmap ul{
+        flex-direction: column;
+    }
+    #roadmap ul li{
+        width: 100%;
+        flex-direction: row;
+    }
+    ul li .progress{
+        margin: 0 30px;
+    }
+  
+    .one::after{
+        height: 80px;
+    }
+    ul li .icon{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width:600px) {
+    .head .head_1{
+        font-size: 24px;
+    }
+    .head .head_2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 410px) {
+    ul li .progress{
+        margin: 0 20px;
+    }
+    .progress::after {
+        left: 93px;
+    }
+}
+@media (max-width: 390px) {
+    ul li .progress{
+        margin: 0 10px;
+    }
+    .progress::after {
+        left: 83px;
+    }
+}
+@media (max-width: 375px) {
+    ul li .progress{
+        margin: 0 5px;
+    }
+    .progress::after {
+        left: 78px;
+    }
+}

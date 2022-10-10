@@ -1,0 +1,37 @@
+.slider-content{
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    color: #fff;
+    text-align: left;
+}
+
+
+.carousel .carousel-status {
+    top: unset;
+    bottom: 0;
+    position: absolute;
+    right: 50%;
+    padding: 5px;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    color: #fff;
+}
+@media (max-width : 500px) {
+    .slider-content {
+        padding: 20px 40px 30px;
+    }
+    .carousel .carousel-status {
+        margin: 0;
+        right: 46%;
+        margin-bottom: 6px;
+    }
+}
+@media (min-width : 991px) {
+    .slider-content{
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    color: #fff;
+    text-align: left;
+    height: 300px;
+}
+}

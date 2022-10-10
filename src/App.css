@@ -1,0 +1,152 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.anchor-link,
+.anchor-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Manual added */
+@font-face {
+  font-family: "Cop";
+  src: url("../src/assets/fonts/Copperplate.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "CopBold";
+  src: url("../src/assets/fonts/CopperplateBold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../src/assets/fonts/avenir1.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bodoni";
+  src: url("../src/assets/fonts/bodoni.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "inter";
+  src: url("../src/assets/fonts/interNormal.ttf") format("truetype");
+  font-weight: normal;
+}
+.primary-text {
+  background: linear-gradient(
+    92.74deg,
+    #cab2fc 20.19%,
+    rgba(202, 178, 252, 0) 473.19%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 0;
+}
+.secondary-text {
+  background: linear-gradient(
+    180deg,
+    #ffffff 51.34%,
+    rgba(171, 170, 222, 0.23) 128.02%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+.ml_10 {
+  margin-left: 10px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.primary-btn {
+  background: #000000;
+  border: 1px solid #ffffff;
+  height: 48px;
+  display: flex;
+  max-width: 200px;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.01em;
+  font-size: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.secondary-btn {
+  background: #3f325a;
+  border-radius: 4px;
+  max-width: 200px;
+  height: 48px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.secondary-btn:hover {
+  background-color: #2c2a31;
+}
+
+
+/* .primary-btn:hover {
+  box-shadow: 0 0 0px 0 #fff inset, 0 0 0px 1px #fff;
+  border: 1px solid #fff;
+} */
+.primary-btn:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+.all_collection_link {
+  font-family: "avenir";
+  letter-spacing: -0.005em;
+  text-decoration-line: underline;
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+.all_collection_link:hover {
+  color: #ede4e4;
+}
+.view_all_section {
+  padding: 50px 0 100px;
+}
+@media screen and (max-width: 600px) {
+  /* .primary-btn{
+    max-width: 250px;
+  } */
+}

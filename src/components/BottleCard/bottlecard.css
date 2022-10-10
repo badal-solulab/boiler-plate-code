@@ -1,0 +1,46 @@
+.cards_position {
+  background-image: url("../../assets/images/yellow_border.svg");
+  background-repeat: no-repeat;
+  height: 321px;
+  max-width: 361px;
+  width: 100%;
+  position: relative;
+}
+.card_title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.cards_star_alignment {
+  display: flex;
+  padding: 20px 24px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_content {
+  font-weight: normal;
+  font-family: "bodoni";
+  margin-bottom: 0;
+  padding: 20px 24px 0;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 29px;
+  max-width: 280px;
+}
+.card_value {
+    position: absolute;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    font-size: 28px;
+    left: 20px;
+    color: #ffffff;
+    bottom: 20px;
+    margin-bottom: 0;
+}
+.wine_position {
+    position: absolute;
+    right: -50px;
+    bottom: 6px;
+}

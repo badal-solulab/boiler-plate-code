@@ -1,0 +1,75 @@
+.accordion-wrapper{
+    padding-bottom: 100px;
+}
+
+.faq-title {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.Collapsible__trigger {
+  font-family: "Avenir";
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+  padding: 18px 40px;
+  background: #292929;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.Collapsible__contentInner {
+  padding: 10px 40px;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #292929;
+}
+.Collapsible__contentInner p {
+  font-family: "Avenir";
+  color: #bbbbbb;
+}
+.is-closed{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.Collapsible__trigger::after {
+  font-family: "FontAwesome";
+  font-size: 24px;
+  content: "\f0dd";
+  position: absolute;
+  right: 20px;
+  top: 41%;
+  transform: translateY(-50%);
+  display: block;
+}
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg);
+  top: 24%;
+}
+
+.Collapsible {
+  margin-bottom: 30px;
+}
+.Collapsible:last-child {
+  margin-bottom: 0;
+}
+#accordion .Collapsible__contentOuter {
+  transition: height 200ms linear 0s !important;
+}
+
+/* updating before routes */
+@media (min-width:992px) {
+  .accordion-wrapper{
+    padding: 0 20px 100px;
+  }
+}

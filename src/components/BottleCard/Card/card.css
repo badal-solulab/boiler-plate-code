@@ -1,0 +1,98 @@
+.cards_position {
+    /* background-image: url("../../../assets/images/yellow_border.svg"); */
+    background-repeat: no-repeat;
+    height: 281px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    position: relative;
+}
+  .card_title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .cards_star_alignment {
+    display: flex;
+    padding: 20px 24px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card_content {
+    font-weight: normal;
+    font-family: "bodoni";
+    margin-bottom: 0;
+    padding: 20px 24px 0;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 29px;
+    max-width: 230px;
+}
+  .card_value {
+      position: absolute;
+      letter-spacing: -0.03em;
+      font-weight: 400;
+      font-size: 22px;
+      left: 20px;
+      color: #ffffff;
+      bottom: 20px;
+      margin-bottom: 0;
+  }
+  .wine_position {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+}
+  .collection_cards {
+    padding: 10px;
+    flex: 0 0 calc(100% / 3);
+}
+.bottle_cards_box {
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: -10px auto;
+}
+.bottle_cards_box .collection_cards {
+    margin-top: 30px;
+}
+.bottle_cards_box .collection_cards:nth-child(2){
+    margin-top: 0;
+}
+.bottlewrapper{
+    margin-top: 40px;
+}
+@media (max-width:991px){
+    .cards_position{
+        max-width: 100%;
+        background-size: cover;
+    }
+    .bottle_cards_box .collection_cards{
+        margin-top: 0;
+    }
+    .collection_cards {
+        flex-basis: calc(100% / 2);
+    }
+}
+@media (max-width:768px){
+
+  
+    .collection_cards {
+        flex-basis: calc(100% / 2);
+    }
+}
+@media (max-width:600px){
+    .cards_position{
+        width: 100%;
+        max-width: 100%;
+        background-size: cover;
+    }
+    .collection_cards {
+        padding: 10px 0;
+
+        flex-basis: calc(100% / 1);
+    }
+}

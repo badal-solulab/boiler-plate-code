@@ -1,0 +1,37 @@
+.collection-wrapper {
+}
+.collection-grand-cru {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hr-border {
+  flex: 50%;
+  height: 1px;
+  border-top: 0.5px solid #818181;
+}
+.grandcru-title {
+}
+.grandcru-desc {
+  flex: 50%;
+  color: #fff;
+  font-size: 24px;
+}
+.grandcru-content {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: avenir;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    margin: 16px auto 0;
+}
+@media (max-width: 500px) {
+  .secondary-text {
+    font-size: 14px;
+  }
+  .grandcru-desc {
+    flex: 50%;
+    color: #fff;
+    font-size: 22px;
+  }
+}

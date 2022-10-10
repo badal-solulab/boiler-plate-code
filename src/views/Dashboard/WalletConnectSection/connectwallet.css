@@ -1,0 +1,44 @@
+
+.yearVal{
+    line-height: 6px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 32px;
+}
+.Grand_CruDescription {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-top: 6px;
+    font-family: "avenir";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 500;
+}
+.wallet_wrapper {
+    max-width: 700px;
+    padding: 70px 0 120px;
+    margin: auto;
+}
+.grandcru_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.grnadcru_img{
+    width: 100%;
+    height: 610px;
+}
+@media screen and (max-width: 600px) {
+    .grandcru_wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .primary-btn{
+        margin: auto;
+    }
+    .grandcru_content{
+        text-align: center;
+    }
+  }

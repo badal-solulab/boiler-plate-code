@@ -66,10 +66,13 @@
 #accordion .Collapsible__contentOuter {
   transition: height 200ms linear 0s !important;
 }
+#page_title .hr-border{
+  flex: 100%;
+}
 
 /* updating before routes */
 @media (min-width:992px) {
   .accordion-wrapper{
-    padding: 0 20px 100px;
+    padding: 0 0px 100px;
   }
 }

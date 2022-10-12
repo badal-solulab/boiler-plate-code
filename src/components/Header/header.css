@@ -55,6 +55,13 @@ white-space: normal;
 padding: 0;
 border: 0;
 }
+.anchor-link, .anchor-link:hover{
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+letter-spacing: 0.015em;
+color: #B0B0B0;
+}
 #responsive-navbar-nav .header-dropdown button:hover,#responsive-navbar-nav .header-dropdown button:focus{
     background-color: transparent;
     padding: 0;
@@ -63,23 +70,28 @@ border: 0;
     outline: none;
 }
 @media (min-width:991px){
+    #header_link .nav-link {
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
 .header-dropdown .dropdown-menu.show{
-    left: -170px;
+    left: -144px;
 }
 }
 @media(min-width:992px) {
-    .flex40{
+    #responsive-navbar-nav .flex40{
             display: flex;
             justify-content: end;
             flex: 43%;
+            font-size: 19px;
     }
     .flex60{
             display: flex;
             justify-content: end;
-            width: 57%;
+            width: 56%;
     }
    #responsive-navbar-nav .flex60 .Nav_left_space{
-        padding-right: 3rem;
+        padding-right: 0px;
     }
     .soigner_title{
         width: 100%;

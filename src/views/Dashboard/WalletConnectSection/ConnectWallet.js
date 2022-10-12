@@ -4,7 +4,7 @@ import { useWeb3React } from "@web3-react/core";
 import { walletconnect } from "../../../utils/connectors";
 import "./connectwallet.css";
 import { useEagerConnect, useInactiveListener } from "../../../hooks";
-import { GRANDCRU } from "../../../assets/images";
+import { GRANDCRU, MINT_PASS } from "../../../assets/images";
 
 const ConnectWallet = () => {
   const [activatingConnector, setActivatingConnector] = useState();
@@ -72,13 +72,15 @@ const ConnectWallet = () => {
             >
               Connect Wallet
             </button>
-          ) : null}
-          {/* <button
-            className="primary-btn"
-            onClick={onConnectWithWalletConnectClick}
-          >
-            Connect Wallet
-          </button> */}
+          ) : (
+            <button
+              className="secondary-btn d-flex align-items-center justify-content-center"
+              
+            >
+              <img src={MINT_PASS} alt="mint-pass " className="mr-2"/>
+              Mint Pass
+            </button>
+          )}
 
           {/* <button
             onClick={() => {

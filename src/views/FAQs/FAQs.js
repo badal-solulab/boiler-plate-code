@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Collapsible from "react-collapsible";
 import Header from "../../components/Header/Header";
+import PageTitleSection from "../../components/PageTitleSection/PageTitleSection";
 import "./faqs.css";
 import "../Dashboard/dashboard.css";
 
@@ -47,8 +48,8 @@ const FAQs = () => {
       <Header />
       <div className="container">
         <div className="accordion-wrapper" id="accordion">
-          <div>
-            <p className="faq-title">FAQ</p>
+          <div id="page_title" className="mb-40">
+            <PageTitleSection showTitle="FAQ" />
           </div>
 
           {items.map((item) => {

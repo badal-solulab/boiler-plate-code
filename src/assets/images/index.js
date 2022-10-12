@@ -28,3 +28,8 @@ export { default as WINE_NEW } from './wine_new.svg';
 export { default as WINE } from './wine.svg';
 export { default as YELOW_BORDER } from './yellow_border.svg';
 export { default as YELLOWBG } from './yellowbg.svg';
+export { default as SEARCH } from './search.svg';
+export { default as GREY_STAR } from './grey_star.svg';
+export { default as YELLOW_STAR } from './yellow_star.svg';
+export { default as WINE1 } from './wine1.svg';
+export { default as MINT_PASS } from './mint_pass.svg';

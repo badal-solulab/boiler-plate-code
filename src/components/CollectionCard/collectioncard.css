@@ -1,0 +1,85 @@
+.rp-value {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.platinum-title {
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: -0.03em;
+  color: #353535;
+}
+.bottle-box {
+  height: 330px;
+  position: relative;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.centered-wine {
+  height: 85%;
+  left: 55%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.wine-description {
+  margin: 13px 0;
+  font-family: "avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+.owner-name {
+  font-family: "avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #9075ff;
+}
+.value-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a5a6a9;
+}
+.value {
+  font-family: "avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+.flex-50 {
+  flex: 50%;
+}
+
+.wine-brand-value {
+  display: flex;
+}
+.collection-bottle-card {
+  display: flex;
+  margin: -10px -15px;
+  flex-wrap: wrap;
+}
+.bottle-wrapper {
+  margin-top: 40px;
+  padding: 10px 15px;
+  flex: 0 0 calc(100% / 4);
+}
+
+@media (max-width: 992px) {
+  .bottle-wrapper {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+@media (max-width: 768px) {
+    .bottle-wrapper {
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+  @media (max-width: 500px) {
+    .bottle-wrapper {
+      flex: 0 0 calc(100% / 1);
+    }
+  }
